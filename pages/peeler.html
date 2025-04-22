@@ -1,0 +1,28 @@
+<div class="tool-container peeler-tool">
+    <div class="tool-header">
+        <span class="icon material-symbols-sharp">nutrition</span>
+        <h2>Peeled Files</h2>
+    </div>
+    
+    <p class="tool-description">Peel away the file path and get just the filenames. Perfect for cleaning up Mac Option+Click copied paths.</p>
+    
+    <div id="drop-area" class="drop-area">
+        <p>Drag and drop text here or click to paste</p>
+    </div>
+    
+    <div class="controls">
+        <div class="checkbox-container">
+            <input type="checkbox" id="keepExtension">
+            <label for="keepExtension">Keep file extension</label>
+        </div>
+        <button id="stripButton" disabled>Peel It</button>
+    </div>
+    
+    <textarea id="inputText" placeholder="Or paste filepaths here..."></textarea>
+    
+    <div class="result-area">
+        <h2>Your peeled files:</h2>
+        <textarea id="outputText" readonly></textarea>
+        <button id="copyButton" class="copy-button" disabled>Copy Result</button>
+    </div>
+</div>

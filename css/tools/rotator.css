@@ -1,0 +1,96 @@
+/* WebP Rotator Tool Styles */
+.rotator-tool {
+    max-width: 800px;
+}
+
+.rotator-tool .rotator-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.rotator-tool .bulk-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.rotator-tool .preview-area {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+    min-height: 200px;
+}
+
+.rotator-tool .empty-state {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: #6a737d;
+    padding: 50px 0;
+}
+
+.rotator-tool .image-preview {
+    border: 1px solid #e4e0d0;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rotator-tool .image-preview img {
+    max-width: 100%;
+    height: auto;
+}
+
+.rotator-tool .rotation-controls {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rotator-tool .rotation-controls button {
+    padding: 6px 10px;
+    font-size: 12px;
+    flex: 1;
+    margin: 0 2px;
+}
+
+.rotator-tool .download-all {
+    width: 100%;
+    background-color: #27ae60;
+}
+
+.rotator-tool .download-all:hover {
+    background-color: #219653;
+}
+
+.rotator-tool .download-all:disabled {
+    background-color: #ccc;
+}
+
+.rotator-tool input[type="file"] {
+    padding: 8px 0;
+}
+
+.rotator-tool .drop-area {
+    border: 2px dashed #f0d8b5;
+    border-radius: 6px;
+    padding: 30px 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+    background-color: #fffaf0;
+}
+
+.rotator-tool .drop-area:hover, 
+.rotator-tool .drop-area.active {
+    border-color: #e67e22;
+    background-color: #fff5e6;
+}
+
+.rotator-tool .drop-area p {
+    margin: 0;
+    color: #666;
+}

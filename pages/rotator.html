@@ -1,0 +1,26 @@
+<div class="tool-container rotator-tool">
+    <div class="tool-header">
+        <span class="icon material-symbols-sharp">screen_rotation_alt</span>
+        <h2>Rotated Files</h2>
+    </div>
+    
+    <p class="tool-description">Rotate WebP images and download them individually or as a batch.</p>
+    
+    <div class="rotator-controls">
+        <div id="drop-area" class="drop-area">
+            <p>Drag and drop WebP images here or click to select files</p>
+            <input type="file" id="file-input" accept=".webp" multiple>
+        </div>
+        <div class="bulk-actions">
+            <button id="rotate-all-cw">Rotate All 90° CW</button>
+            <button id="rotate-all-ccw">Rotate All 90° CCW</button>
+            <button id="rotate-all-180">Rotate All 180°</button>
+        </div>
+    </div>
+    
+    <div class="preview-area" id="preview-area">
+        <p class="empty-state">Upload WebP images to begin</p>
+    </div>
+    
+    <button class="download-all" id="download-all" disabled>Download All Rotated Images</button>
+</div>
